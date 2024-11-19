@@ -1,3 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
 body {
-  background-color: black;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  font-family: Roboto;
+  background-color: #eee;
+  /* outline for dev */
+  border: 1px solid black;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+/* make diagonal shaped header */
+header:before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(39, 44, 68);
+  transform: skewY(-20deg);
+  transform-origin: top center;
+  height: 500px;
+}
+
+.profile {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+  animation: drop-in 800ms;
+}
+
+.profile img {
+  border-radius: 4%;
+}
+
+@keyframes drop-in {
+  0% {
+    transform: translateY(-5%);
+    opacity: 50%;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}
+
+.name {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: serif;
+  line-height: 1;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.about-content {
+  font-size: 20px;
+}
+
+.about-icons {
+  margin-top: 14px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.main-title {
+  margin-bottom: -30px;
+}
+
+.project-card {
+  margin: 0 20px;
+  box-shadow: 2px 2px 5px darkgrey;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 4%;
+  overflow: hidden;
+}
+
+.project-card img {
+  height: 330px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.project-description {
+  padding: 10px 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: rgb(39, 44, 68);
+  color: white;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+
+.contact-title {
+  align-self: center;
+  margin-bottom: -20px;
+}
+
+.contact-msg {
+  font-size: 20px;
+}
+
+.contact-icons {
+  align-self: center;
 }
