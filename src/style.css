@@ -19,8 +19,6 @@ body {
   align-items: center;
   font-family: Roboto;
   background-color: #eee;
-  /* outline for dev */
-  border: 1px solid black;
 }
 
 img, picture, video, canvas, svg {
@@ -107,6 +105,7 @@ header:before {
 .about {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   align-items: center;
   padding: 0 30px;
 }
@@ -116,18 +115,20 @@ header:before {
 }
 
 .about-icons {
-  margin-top: 14px;
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 80px;
 }
 
 .main-title {
-  margin-bottom: -30px;
+  margin-bottom: -50px;
 }
 
 .project-card {
@@ -142,7 +143,7 @@ main {
   overflow: hidden;
 }
 
-.project-card img {
+img.screenshot {
   height: 330px;
   width: 100%;
   object-fit: cover;
@@ -151,6 +152,7 @@ main {
 .project-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
   font-size: 20px;
   font-weight: 600;
@@ -158,6 +160,11 @@ main {
 
 .project-description {
   padding: 10px 20px;
+}
+
+.project-links {
+  display: flex;
+  gap: 20px;
 }
 
 footer {
@@ -186,4 +193,6 @@ footer {
 
 .contact-icons {
   align-self: center;
+  display: flex;
+  gap: 30px;
 }
