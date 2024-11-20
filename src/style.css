@@ -8,19 +8,6 @@
   margin: 0;
 }
 
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  width: 480px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-  align-items: center;
-  font-family: Roboto;
-  background-color: #eee;
-}
-
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
@@ -46,12 +33,32 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+html {
+  background-color: black;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  font-family: Roboto;
+  background-color: #eee;
+}
+
 header {
   position: relative;
   display: flex;
   flex-direction: column;
+  flex: 0;
   gap: 40px;
   align-items: center;
+  justify-content: center;
+  padding: 30px;
 }
 
 /* make diagonal shaped header */
@@ -71,8 +78,9 @@ header:before {
 .profile {
   position: relative;
   margin: 0 auto;
-  margin-top: 30px;
   animation: drop-in 800ms;
+  flex: 0 0 auto;
+  z-index: 1;
 }
 
 .profile img {
@@ -99,15 +107,17 @@ header:before {
   position: absolute;
   bottom: 10px;
   left: 20px;
-
+  z-index: 2;
 }
 
 .about {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 18px;
+  background-color: #eee;
 }
 
 .about-content {
@@ -124,15 +134,17 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 80px;
+  gap: 20px;
 }
 
-.main-title {
-  margin-bottom: -50px;
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0 24px;
 }
 
 .project-card {
-  margin: 0 20px;
   box-shadow: 2px 2px 5px darkgrey;
   height: 500px;
   display: flex;
@@ -143,10 +155,20 @@ main {
   overflow: hidden;
 }
 
-img.screenshot {
+.img-container {
   height: 330px;
   width: 100%;
+  overflow: hidden;
+}
+
+.screenshot {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+
+.project-content {
+  height: 170px;
 }
 
 .project-header {
@@ -173,6 +195,7 @@ footer {
   gap: 30px;
   background-color: rgb(39, 44, 68);
   color: white;
+  width: 100%;
 }
 
 .contact {
@@ -195,4 +218,93 @@ footer {
   align-self: center;
   display: flex;
   gap: 30px;
+}
+
+@media (min-width: 1000px) {
+  body {
+    width: 1000px;
+  }
+
+  header {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  header:before {
+    top: -200px;
+    height: 530px;
+  }
+
+  .profile {
+    width: 380px;
+  }
+
+  .profile img {
+    border-radius: 0;
+    box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.5);
+  }
+
+  .about {
+    box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.5);
+    height: 340px;
+    padding: 30px;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .about-content {
+    font-size: 18px;
+  }
+
+  .about-icons {
+    align-self: end;
+    gap: 20px;
+    margin-top: 0;
+  }
+
+  .about-icons img {
+    width: 28px;
+  }
+
+  .project-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .project-card {
+    height: 400px;
+  }
+
+  .img-container {
+    height: 220px;
+  }
+
+  .project-description {
+    padding: 0 20px;
+  }
+
+  .project-links {
+    gap: 10px;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+
+  .contact {
+    width: 480px;
+  }
+
+  .contact-title {
+    align-self: start;
+  }
+
+  .contact-icons {
+    align-self: start;
+  }
+
+  footer picture {
+    padding: 30px 50px;
+  }
 }

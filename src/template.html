@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>John J. Park</title>
   </head>
   <body>
     <header>
       <div class='profile'>
         <picture>
-          <!-- <source media='(min-width: 1000px)' srcset='./img/profile.jpg' /> -->
+          <source media='(min-width: 1000px)' srcset='./img/profile.jpg' />
           <img src='./img/profile-480w-portrait.jpg' alt='illustration of John' />
         </picture>
         <div class='name'>John<br>J. Park</div>
@@ -28,117 +28,131 @@
     </header>
     <main>
       <h1 class='main-title'>My work</h1>
-        <div class='project-card'>
-          <img class='screenshot' src='./img/projects/dashboard-480w.png' alt='admin dashboard project screenshot' />
-          <div class='project-content'>
-            <div class='project-header'>
-              <div class='project-title'>Admin Dashboard</div>
-              <div class='project-links'>
-                <a href='https://github.com/jprk8/admin-dashboard' target='_blank' rel='noopener noreferrer'>
-                  <img src='./icon/github.svg' alt='' width='30px' />
-                </a>
-                <a href='https://jprk8.github.io/admin-dashboard/' target='_blank' rel='noopener noreferrer'>
-                  <img src='./icon/open-in-new.svg' alt='' width='30px' />
-                </a>
-              </div>
+        <div class='project-wrapper'>
+          <div class='project-card'>
+            <div class='img-container'>
+              <img class='screenshot' src='./img/projects/dashboard-480w.png' alt='admin dashboard project screenshot' />
             </div>
-            <div class='project-description'>
-              Admin Dashboard design created with CSS Grid and Flexbox layout method.
+            <div class='project-content'>
+              <div class='project-header'>
+                <div class='project-title'>Admin Dashboard</div>
+                <div class='project-links'>
+                  <a href='https://github.com/jprk8/admin-dashboard' target='_blank' rel='noopener noreferrer'>
+                    <img src='./icon/github.svg' alt='' width='30px' />
+                  </a>
+                  <a href='https://jprk8.github.io/admin-dashboard/' target='_blank' rel='noopener noreferrer'>
+                    <img src='./icon/open-in-new.svg' alt='' width='30px' />
+                  </a>
+                </div>
+              </div>
+              <div class='project-description'>
+                Admin Dashboard design created with CSS Grid and Flexbox layout method.
+              </div>
             </div>
           </div>
-        </div>
-        <div class='project-card'>
-          <img class='screenshot' src='./img/projects/weather-480w.png' alt='weather app project screenshot' />
-          <div class='project-content'>
-            <div class='project-header'>
-              <div class='project-title'>Weather App</div>
-              <div class='project-links'>
-                <a href='https://github.com/jprk8/weather-app' target='_blank' rel='noopener noreferrer'>
-                  <img src='./icon/github.svg' alt='' width='30px' />
-                </a>
-                <a href='https://jprk8.github.io/weather-app/' target='_blank' rel='noopener noreferrer'>
-                  <img src='./icon/open-in-new.svg' alt='' width='30px' />
-                </a>
-              </div>
+          <div class='project-card'>
+            <div class='img-container'>
+              <img class='screenshot' src='./img/projects/weather-480w.png' alt='weather app project screenshot' />
             </div>
-            <div class='project-description'>
-              Weather forecast website created using Visual Crossing API, async and await functions
+            <div class='project-content'>
+              <div class='project-header'>
+                <div class='project-title'>Weather App</div>
+                <div class='project-links'>
+                  <a href='https://github.com/jprk8/weather-app' target='_blank' rel='noopener noreferrer'>
+                    <img src='./icon/github.svg' alt='' width='30px' />
+                  </a>
+                  <a href='https://jprk8.github.io/weather-app/' target='_blank' rel='noopener noreferrer'>
+                    <img src='./icon/open-in-new.svg' alt='' width='30px' />
+                  </a>
+                </div>
+              </div>
+              <div class='project-description'>
+                Weather forecast website created using Visual Crossing API, async and await functions
+              </div>
             </div>
           </div>
-        </div>
-        <div class='project-card'>
-          <img class='screenshot' src='./img/projects/todo-list-480w.png' alt='Todo List website screenshot' />
-          <div class='project-content'>
-            <div class='project-header'>
-              <div class='project-title'>Todo List</div>
-              <div class='project-links'>
-                <a href='https://github.com/jprk8/todo-list' target='_blank' rel='noopener noreferrer'>
-                  <img src='./icon/github.svg' alt='' width='30px' />
-                </a>
-                <a href='https://jprk8.github.io/todo-list/' target='_blank' rel='noopener noreferrer'>
-                  <img src='./icon/open-in-new.svg' alt='' width='30px' />
-                </a>
-              </div>
+          <div class='project-card'>
+            <div class='img-container'>
+              <img class='screenshot' src='./img/projects/todo-list-480w.png' alt='Todo List website screenshot' />
             </div>
-            <div class='project-description'>
-              Todo List created using Classes and Modules. Used Web Storage API (localStorage) for persistence.
+            <div class='project-content'>
+              <div class='project-header'>
+                <div class='project-title'>Todo List</div>
+                <div class='project-links'>
+                  <a href='https://github.com/jprk8/todo-list' target='_blank' rel='noopener noreferrer'>
+                    <img src='./icon/github.svg' alt='' width='30px' />
+                  </a>
+                  <a href='https://jprk8.github.io/todo-list/' target='_blank' rel='noopener noreferrer'>
+                    <img src='./icon/open-in-new.svg' alt='' width='30px' />
+                  </a>
+                </div>
+              </div>
+              <div class='project-description'>
+                Todo List created using Classes and Modules. Used Web Storage API (localStorage) for persistence.
+              </div>
             </div>
           </div>
-        </div>
-        <div class='project-card'>
-          <img class='screenshot' src='./img/projects/battleship-480w.png' alt='battleship game project screenshot' />
-          <div class='project-content'>
-            <div class='project-header'>
-              <div class='project-title'>Battleship Game</div>
-              <div class='project-links'>
-                <a href='https://github.com/jprk8/battleship' target='_blank' rel='noopener noreferrer'>
-                  <img src='./icon/github.svg' alt='' width='30px' />
-                </a>
-                <a href='https://jprk8.github.io/battleship/' target='_blank' rel='noopener noreferrer'>
-                  <img src='./icon/open-in-new.svg' alt='' width='30px' />
-                </a>
-              </div>
+          <div class='project-card'>
+            <div class='img-container'>
+              <img class='screenshot' src='./img/projects/battleship-480w.png' alt='battleship game project screenshot' />
             </div>
-            <div class='project-description'>
-              Battleship game played in browser against a computer. Applied Test Driven Development (TDD) principles using Jest as testing framework.
+            <div class='project-content'>
+              <div class='project-header'>
+                <div class='project-title'>Battleship</div>
+                <div class='project-links'>
+                  <a href='https://github.com/jprk8/battleship' target='_blank' rel='noopener noreferrer'>
+                    <img src='./icon/github.svg' alt='' width='30px' />
+                  </a>
+                  <a href='https://jprk8.github.io/battleship/' target='_blank' rel='noopener noreferrer'>
+                    <img src='./icon/open-in-new.svg' alt='' width='30px' />
+                  </a>
+                </div>
+              </div>
+              <div class='project-description'>
+                Battleship game played in browser against a computer. Applied Test Driven Development (TDD) principles using Jest.
+              </div>
             </div>
           </div>
-        </div>
-        <div class='project-card'>
-          <img class='screenshot' src='./img/projects/tic-tac-toe-480w.png' alt='tic-tac-toe project screenshot' />
-          <div class='project-content'>
-            <div class='project-header'>
-              <div class='project-title'>Tic Tac Toe</div>
-              <div class='project-links'>
-                <a href='https://github.com/jprk8/tic-tac-toe' target='_blank' rel='noopener noreferrer'>
-                  <img src='./icon/github.svg' alt='' width='30px' />
-                </a>
-                <a href='https://jprk8.github.io/tic-tac-toe/' target='_blank' rel='noopener noreferrer'>
-                  <img src='./icon/open-in-new.svg' alt='' width='30px' />
-                </a>
-              </div>
+          <div class='project-card'>
+            <div class='img-container'>
+              <img class='screenshot' src='./img/projects/tic-tac-toe-480w.png' alt='tic-tac-toe project screenshot' />
             </div>
-            <div class='project-description'>
-              Tic Tac Toe game played in browser. Learning to use IIFE (module pattern) before ES6 Modules.
+            <div class='project-content'>
+              <div class='project-header'>
+                <div class='project-title'>Tic Tac Toe</div>
+                <div class='project-links'>
+                  <a href='https://github.com/jprk8/tic-tac-toe' target='_blank' rel='noopener noreferrer'>
+                    <img src='./icon/github.svg' alt='' width='30px' />
+                  </a>
+                  <a href='https://jprk8.github.io/tic-tac-toe/' target='_blank' rel='noopener noreferrer'>
+                    <img src='./icon/open-in-new.svg' alt='' width='30px' />
+                  </a>
+                </div>
+              </div>
+              <div class='project-description'>
+                Tic Tac Toe game played in browser. Learning to use IIFE (module pattern) before ES6 Modules.
+              </div>
             </div>
           </div>
-        </div>
-        <div class='project-card'>
-          <img class='screenshot' src='./img/projects/restaurant-480w.png' alt='restaurant page screenshot' />
-          <div class='project-content'>
-            <div class='project-header'>
-              <div class='project-title'>Restaurant Website</div>
-              <div class='project-links'>
-                <a href='https://github.com/jprk8/restaurant' target='_blank' rel='noopener noreferrer'>
-                  <img src='./icon/github.svg' alt='' width='30px' />
-                </a>
-                <a href='https://jprk8.github.io/restaurant/' target='_blank' rel='noopener noreferrer'>
-                  <img src='./icon/open-in-new.svg' alt='' width='30px' />
-                </a>
-              </div>
+          <div class='project-card'>
+            <div class='img-container'>
+              <img class='screenshot' src='./img/projects/restaurant-480w.png' alt='restaurant page screenshot' />
             </div>
-            <div class='project-description'>
-              Restaurant page created with DOM manipulation through javascript. Used ES6 module for each page.
+            <div class='project-content'>
+              <div class='project-header'>
+                <div class='project-title'>Restaurant</div>
+                <div class='project-links'>
+                  <a href='https://github.com/jprk8/restaurant' target='_blank' rel='noopener noreferrer'>
+                    <img src='./icon/github.svg' alt='' width='30px' />
+                  </a>
+                  <a href='https://jprk8.github.io/restaurant/' target='_blank' rel='noopener noreferrer'>
+                    <img src='./icon/open-in-new.svg' alt='' width='30px' />
+                  </a>
+                </div>
+              </div>
+              <div class='project-description'>
+                Restaurant page created with DOM manipulation through javascript. Used ES6 module for each page.
+              </div>
             </div>
           </div>
         </div>
