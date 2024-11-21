@@ -220,6 +220,11 @@ footer {
   gap: 30px;
 }
 
+/* Disable telephone number coloring on mobile */
+a[href^='tel'] {
+  color: inherit;
+}
+
 @media (min-width: 800px) {
   body {
     max-width: 900px;
