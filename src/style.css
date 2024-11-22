@@ -42,7 +42,6 @@ body {
   -webkit-font-smoothing: antialiased;
   max-width: 540px;
   width: 100%;
-  /* width: 480px; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -54,12 +53,6 @@ body {
 
 header {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
 }
 
 /* make diagonal shaped header */
@@ -76,11 +69,19 @@ header:before {
   height: 450px;
 }
 
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
 .profile {
   position: relative;
   margin: 0 auto;
   animation: drop-in 800ms;
-  /* flex: none; */
   z-index: 1;
 }
 
@@ -143,7 +144,6 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 80px;
-  /* padding: 0 30px; */
 }
 
 .project-card {
@@ -227,17 +227,22 @@ a[href^='tel'] {
 
 @media (min-width: 800px) {
   body {
-    max-width: 900px;
+    max-width: 1000px;
   }
 
   header:before {
-    top: -180px;
+    top: -190px;
     height: 700px;
   }
 
   header {
-    display: block;
     width: 100%;
+  }
+
+  .header-content {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
   }
 
   .profile {
@@ -311,16 +316,17 @@ a[href^='tel'] {
     max-width: 1400px;
   }
 
-  header {
+  header:before {
+    top: -280px;
+    height: 680px;
+  }
+
+  .header-content {
     display: flex;
     flex-direction: row;
     gap: 0;
     padding: 50px;
-  }
-
-  header:before {
-    top: -280px;
-    height: 680px;
+    width: 100%;
   }
 
   .profile {
