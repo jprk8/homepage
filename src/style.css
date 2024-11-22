@@ -198,6 +198,10 @@ footer {
   width: 100%;
 }
 
+footer picture img {
+  width: 100%;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
